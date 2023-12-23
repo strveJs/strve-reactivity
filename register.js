@@ -1,4 +1,4 @@
-import { registerComponent } from './lib/strve.js'
+import { registerComponent } from './lib/core.js'
 // import { MyComponent, MyChild } from './components/component3.js'
 // import { MyComponent, MyChild } from './components/component1.js'
 import { MyComponent, MyChild } from './components/component2.js'

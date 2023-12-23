@@ -7,7 +7,7 @@ import {
     defineComponent,
     reactive,
     ref,
-} from '../lib/strve.js';
+} from '../lib/core.js';
 
 export const MyComponent = defineComponent(() => {
     const state = reactive({
