@@ -1,5 +1,5 @@
+import { html } from 'https://cdn.jsdelivr.net/npm/strve-js@6.2.6/dist/strve.full-esm.js';
 import {
-    html,
     setData,
     domInfo,
     onMounted,
