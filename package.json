@@ -1,0 +1,8 @@
+{
+  "name": "strve-reactivity",
+  "version": "1.0.0",
+  "description": "Reactivity strve.js.",
+  "main": "index.js",
+  "author": "maomincoding",
+  "license": "MIT"
+}

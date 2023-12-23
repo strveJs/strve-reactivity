@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>strve-reactivity</title>
+  </head>
+  <body>
+    <script type="module">
+      import { html, createApp } from './lib/strve.js';
+      import register from './register.js';
+
+      register();
+
+      createApp(() => html`<my-component></my-component>`).mount('#app');
+    </script>
+  </body>
+</html>
