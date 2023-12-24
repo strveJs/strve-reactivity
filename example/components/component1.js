@@ -5,6 +5,7 @@ import {
     reactive,
     onMounted,
     onUnmounted,
+    watchProps
 } from '../../dist/strve-reactivity.esm.js';
 
 export const MyComponent = defineComponent(() => {
@@ -48,10 +49,13 @@ export const MyChild = defineComponent(
             })
         };
 
-        onMounted(() => {
+        watchProps(() => {
             setData(() => {
                 state.msg = props.msg;
             })
+        })
+
+        onMounted(() => {
             console.log('child mounted');
         });
 
