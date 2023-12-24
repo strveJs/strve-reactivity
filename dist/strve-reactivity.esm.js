@@ -1,5 +1,5 @@
 /*!
- * Strve Reactivity v1.0.0
+ * Strve Reactivity v1.1.0
  * (c) 2023-2023 maomincoding
  * Released under the MIT License.
  */
