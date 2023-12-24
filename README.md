@@ -4,6 +4,10 @@
 
 ## Introduce
 
+Powered by [@vue/reactivity](https://github.com/vuejs/core/tree/main/packages/reactivity) and [strve-js](https://github.com/strveJs/strve) Custom elements JavaScript library.
+
+The main features are as follows:
+
 - Web Components
 - Hooks
 - Reactivity API
