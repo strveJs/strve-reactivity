@@ -1,7 +1,7 @@
-import { registerComponent } from './lib/core.js'
+import { registerComponent } from '../../dist/strve-reactivity.esm.js'
 // import { MyComponent, MyChild } from './components/component3.js'
 // import { MyComponent, MyChild } from './components/component1.js'
-import { MyComponent, MyChild } from './components/component2.js'
+import { MyComponent, MyChild } from './component2.js'
 
 
 // global registration

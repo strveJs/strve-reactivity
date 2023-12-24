@@ -1,5 +1,5 @@
-import { html } from 'https://cdn.jsdelivr.net/npm/strve-js@6.2.6/dist/strve.full-esm.js';
-import { setData, ref, defineComponent, reactive, onMounted, onUnmounted } from '../lib/core.js';
+import { html } from 'https://cdn.jsdelivr.net/npm/strve-js/dist/strve.full-esm.js';
+import { setData, ref, defineComponent, reactive, onMounted, onUnmounted } from '../../dist/strve-reactivity.esm.js';
 
 export const MyComponent = defineComponent(() => {
   const items = reactive([{
