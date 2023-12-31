@@ -1,6 +1,5 @@
 import { html } from 'https://cdn.jsdelivr.net/npm/strve-js/dist/strve.full-esm.js';
 import {
-    setData,
     domInfo,
     onMounted,
     onUnmounted,
@@ -17,10 +16,8 @@ export const MyComponent = defineComponent(() => {
     const count = ref(0);
 
     const increase = () => {
-        setData(() => {
-            count.value++;
-            console.log(domInfo.pref);
-        })
+        count.value++;
+        console.log(domInfo.pref);
     };
 
     const onbuild = (e) => {
@@ -45,15 +42,11 @@ export const MyChild = defineComponent(
     ({ props, content }) => {
         const state = reactive({ count: 0, msg: '' });
         const increase = () => {
-            setData(() => {
-                state.count++;
-            })
+            state.count++;
         };
 
         watchProps(() => {
-            setData(() => {
-                state.msg = props.msg;
-            })
+            state.msg = props.msg;
         })
 
         onMounted(() => {

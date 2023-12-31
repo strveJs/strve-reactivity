@@ -1,5 +1,5 @@
 import { html } from 'https://cdn.jsdelivr.net/npm/strve-js/dist/strve.full-esm.js';
-import { setData, ref, defineComponent, reactive, onMounted, onUnmounted } from '../../dist/strve-reactivity.esm.js';
+import { ref, defineComponent, reactive, onMounted, onUnmounted } from '../../dist/strve-reactivity.esm.js';
 
 export const MyComponent = defineComponent(() => {
   const items = reactive([{
@@ -11,12 +11,10 @@ export const MyComponent = defineComponent(() => {
   }]);
   const count = ref(4);
   const increase = () => {
-    setData(() => {
-      items.unshift({
-        id: count.value++,
-        tit: 'C'
-      });
-    })
+    items.unshift({
+      id: count.value++,
+      tit: 'C'
+    });
   };
 
   return () => html`
@@ -34,9 +32,7 @@ export const MyChild = defineComponent(
   () => {
     const state = reactive({ count: 0, msg: '' });
     const increase = () => {
-      setData(() => {
-        state.count++;
-      })
+      state.count++;
     };
 
     onMounted(() => {

@@ -1,6 +1,5 @@
 import { html } from 'https://cdn.jsdelivr.net/npm/strve-js/dist/strve.full-esm.js';
 import {
-    setData,
     defineComponent,
     reactive,
     onMounted,
@@ -14,14 +13,10 @@ export const MyComponent = defineComponent(() => {
         show: true,
     });
     const toggle = () => {
-        setData(() => {
-            state.show = !state.show;
-        })
+        state.show = !state.show;
     };
     const onInput = (e) => {
-        setData(() => {
-            state.text = e.target.value;
-        })
+        state.text = e.target.value;
     };
 
     return () => html`
@@ -44,15 +39,11 @@ export const MyChild = defineComponent(
     ({ props }) => {
         const state = reactive({ count: 0, msg: '' });
         const increase = () => {
-            setData(() => {
-                state.count++;
-            })
+            state.count++;
         };
 
         watchProps(() => {
-            setData(() => {
-                state.msg = props.msg;
-            })
+            state.msg = props.msg;
         })
 
         onMounted(() => {
